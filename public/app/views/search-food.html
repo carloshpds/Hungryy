@@ -1,0 +1,33 @@
+
+<article id="i-am-hungry-view" class="container">
+  
+    <!-- Alert Error -->
+  <div class="alert alert-danger">
+    <h4>Oh No! Houston, we have a problem...</h4>
+    <p ng-model="url">Site: {{url}} </p>
+    <p ngModel="errorMessage">{{errorMessage}}</p>
+    <br />
+    <buttton class="btn btn-warning" ng-click="doAnotherSearch()">Do another search</buttton>
+    <button class="btn btn-success" ng-click="loadUrl()">Try again</button>
+  </div>
+
+  <h1>I am so Hungry!!</h1>
+  <section id="hungryy-core-container" class="row " style ="color:black;">
+    
+    <select 
+      chosen 
+      multiple 
+      id        ="states" 
+      ng-options="state.value as state.label for state in mock"
+      ng-model  ="selecionadas"
+      class     ="form-control"
+    >   
+    </select>
+
+  </section>
+   
+
+
+</article>
+
+

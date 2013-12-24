@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('apiExplorerApp')
+angular.module('hungryyApp')
   .controller 'TeamController', ($scope) ->
     $scope.teamGroup = [
       { 

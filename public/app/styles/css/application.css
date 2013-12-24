@@ -1,8 +1,9 @@
-
-.nav-api-explorer {
-	margin-bottom: 0;
+/* line 4, ../sass/application.sass */
+.nav-hungryy-app {
+  margin-bottom: 0px;
 }
 
+/* line 8, ../sass/application.sass */
 body > main > .container {
-	padding-top: 55px;
+  padding-top: 55px;
 }

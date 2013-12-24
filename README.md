@@ -1,2 +1,4 @@
 Hungryy
 =======
+
+* pip install nose
