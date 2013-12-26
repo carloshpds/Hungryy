@@ -2,7 +2,7 @@
 <article id="i-am-hungry-view" class="container">
   
     <!-- Alert Error -->
-  <div class="alert alert-danger">
+  <div class="alert alert-danger" ng-show="requestError">
     <h4>Oh No! Houston, we have a problem...</h4>
     <p ng-model="url">Site: {{url}} </p>
     <p ngModel="errorMessage">{{errorMessage}}</p>
@@ -11,18 +11,35 @@
     <button class="btn btn-success" ng-click="loadUrl()">Try again</button>
   </div>
 
-  <h1>I am so Hungry!!</h1>
-  <section id="hungryy-core-container" class="row " style ="color:black;">
+  
+  <section id="hungryy-core-container" class="row " >
+    <div class="col-md-6 col-md-offset-3">
+      
+      <!-- Header - I'm so hungry -->
+      <div class="row">
+        <div class="col-md-12">
+          <h1>
+            I am so Hungry!!
+          </h1>
+        </div>
+      </div>
     
-    <select 
-      chosen 
-      multiple 
-      id        ="states" 
-      ng-options="state.value as state.label for state in mock"
-      ng-model  ="selecionadas"
-      class     ="form-control"
-    >   
-    </select>
+      <!-- Ingredients - Chosen -->
+      <div class="row">
+        <div class="col-md-12" style ="color:black;">
+          <select 
+            chosen 
+            multiple 
+            id        ="states" 
+            ng-options="state.value as state.label for state in mock"
+            ng-model  ="selecionadas"
+            class     ="form-control"
+          >   
+          </select>
+        </div>
+      </div>
+    </div>
+    
 
   </section>
    
