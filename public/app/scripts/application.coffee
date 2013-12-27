@@ -4,7 +4,6 @@ angular.module('hungryyApp', ['ui.router','localytics.directives'])
   .config( ($stateProvider, $urlRouterProvider) => 
 
     
-
     $stateProvider
       .state('search-food', 
         url        : '/search-food',
