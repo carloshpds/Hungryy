@@ -10,7 +10,6 @@ Hungryy
 * sudo pip install termcolor
 
 
-
 ## Front-end Dependencies
 
 - NodeJS
