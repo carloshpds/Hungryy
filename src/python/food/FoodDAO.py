@@ -8,7 +8,7 @@ from src.python.food.FoodFactory import FoodFactory
 # ===============================================
 # FoodDAO class
 # ===============================================
-class FoodDAO():
+class FoodDAO(object):
 
   """docstring for FoodDAO"""
   def __init__(self):
@@ -17,13 +17,18 @@ class FoodDAO():
     self.FoodFactory = FoodFactory()
 
   def listFoods(self):
-    query = "SELECT * FROM food"
-    self.connCursor.execute(query)
+    try:
+      query = "SELECT * FROM food"
+      self.connCursor.execute(query)
 
-    results         = self.connCursor.fetchall()
-    foodCollection  = self.FoodFactory.buildCollection(results)
-    
-    return foodCollection
+      results         = self.connCursor.fetchall()
+      foodCollection  = self.FoodFactory.buildCollection(results)
+      
+      return foodCollection
+
+    except Exception as error:
+      print '[FoodDAO] listFoods: ' + str(error)
+
 
   def searchFoodByIngredients(self, ingredients=[]):
     query = """ SELECT * FROM food f 

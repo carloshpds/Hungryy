@@ -7,7 +7,7 @@ import MySQLdb
 # ===============================================
 # ConnectionFactory class
 # ===============================================
-class ConnectionFactory():
+class ConnectionFactory(object):
 
   def __init__(self):
     self.connectionConfig = {
