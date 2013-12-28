@@ -43,6 +43,6 @@ bower install
 ## MySQL User
 SQL commands:
 ```
-CREATE USER 'hungryy-user'@'localhost' IDENTIFIED BY 'some_pass';
+CREATE USER 'hungryy-user'@'localhost' IDENTIFIED BY 'hungryy-db';
 GRANT ALL PRIVILEGES ON *.* TO 'hungryy-user'@'localhost' WITH GRANT OPTION;
 ```
