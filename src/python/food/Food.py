@@ -2,7 +2,7 @@
 # ===============================================
 # Food class
 # ===============================================
-class Food():
+class Food(object):
 
   """docstring for Food"""
   def __init__(self, id, name, description):

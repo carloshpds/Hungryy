@@ -30,9 +30,9 @@
           <select 
             chosen 
             multiple 
-            id        ="states" 
-            ng-options="state.value as state.label for state in mock"
-            ng-model  ="selecionadas"
+            id        ="ingredients-select" 
+            ng-options="ingredient.id as ingredient.name for ingredient in ingredients.data"
+            ng-model  ="selectedIngredients"
             class     ="form-control"
           >   
           </select>

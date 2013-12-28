@@ -2,3 +2,7 @@
 #i-am-hungry-view #hungryy-core-container {
   padding: 15px;
 }
+/* line 15, ../../sass/i-am-hungry/i-am-hungry.sass */
+#i-am-hungry-view .chosen-container-multi ul.chosen-choices {
+  padding: 15px;
+}
