@@ -18,16 +18,31 @@ sudo apt-get install nodejs
 ```
 - GruntJS
 ```
-npm install -g grunt-cli
+sudo npm install -g grunt-cli
+```
+- Bower
+```
+sudo npm install -g bower
+```
+- Compass
+```
+gem install compass
 ```
 
 ### Public Directory
 - NPM dependencies (package.json):
 ```
-npm install
+sudo npm install
 ```
 
 - Bower dependencies (bower.json):
 ```
 bower install
+```
+
+## MySQL User
+SQL commands:
+```
+CREATE USER 'hungryy-user'@'localhost' IDENTIFIED BY 'some_pass';
+GRANT ALL PRIVILEGES ON *.* TO 'hungryy-user'@'localhost' WITH GRANT OPTION;
 ```

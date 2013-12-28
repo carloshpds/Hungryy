@@ -11,7 +11,7 @@ angular.module('hungryyApp', ['ui.router','localytics.directives'])
         controller : 'FoodController'
         resolve    : 
           resolveIngredients: ($q,$timeout,IngredientFactory) =>
-          return IngredientFactory.listIngredients()
+            return IngredientFactory.listIngredients()
       )
 
       .state('team',

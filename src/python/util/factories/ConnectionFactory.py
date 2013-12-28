@@ -11,8 +11,8 @@ class ConnectionFactory(object):
 
   def __init__(self):
     self.connectionConfig = {
-      'user'   : 'root',
-      'passwd' : 'root',
+      'user'   : 'hungryy-user',
+      'passwd' : 'hungryy-db',
       'host'   : 'localhost',
       'db'     : 'hungryy-db'
     }
