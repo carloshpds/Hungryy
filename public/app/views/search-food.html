@@ -1,10 +1,9 @@
 
 <article id="i-am-hungry-view" class="container">
   
-    <!-- Alert Error -->
+  <!-- Alert Error -->
   <div class="alert alert-danger" ng-show="requestError">
     <h4>Oh No! Houston, we have a problem...</h4>
-    <p ng-model="url">Site: {{url}} </p>
     <p ngModel="errorMessage">{{errorMessage}}</p>
     <br />
     <buttton class="btn btn-warning" ng-click="doAnotherSearch()">Do another search</buttton>
@@ -19,7 +18,7 @@
       <div class="row">
         <div class="col-md-12">
           <h1>
-            I am so Hungry!!
+            My ingredients...
           </h1>
         </div>
       </div>
@@ -37,11 +36,32 @@
           >   
           </select>
         </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <button 
+              id="search-food-button" 
+              class="btn btn-primary form-control"
+              ng-click="searchFoodByIngredients()">
+              Search for food !!
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
-    
-
   </section>
+
+  
+  <section>
+    <ul>
+      <li ng-repeat="food in resultFoods">
+        {{food.name}}
+      </li>
+    </ul>
+  </section>
+
+
 
 </article>
 

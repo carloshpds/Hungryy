@@ -35,17 +35,6 @@ class Root():
         'tools.staticdir.root': current_dir
       },
 
-      '/feed': {
-        'tools.staticdir.on' : True,
-        'tools.staticdir.dir': os.path.join(current_dir, 'public'),
-        'log.screen': True,
-        'tools.staticdir.content_types': {
-          'rss' : 'application/json',
-          'atom': 'application/json'
-        },
-        
-      },
-
       '/scripts' : {
         'tools.staticdir.on' : True,
         'log.screen': True,

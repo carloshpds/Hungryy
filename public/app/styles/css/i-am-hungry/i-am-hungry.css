@@ -1,8 +1,14 @@
-/* line 11, ../../sass/i-am-hungry/i-am-hungry.sass */
-#i-am-hungry-view #hungryy-core-container {
+/* line 12, ../../sass/i-am-hungry/i-am-hungry.sass */
+#i-am-hungry-view .chosen-container-multi ul.chosen-choices {
   padding: 15px;
 }
 /* line 15, ../../sass/i-am-hungry/i-am-hungry.sass */
-#i-am-hungry-view .chosen-container-multi ul.chosen-choices {
+#i-am-hungry-view #hungryy-core-container {
   padding: 15px;
+}
+/* line 18, ../../sass/i-am-hungry/i-am-hungry.sass */
+#i-am-hungry-view #search-food-button {
+  height: 150px;
+  font-size: 50px;
+  font-family: Lobster, cursive;
 }

@@ -16,9 +16,15 @@ class FoodController():
 
   @cherrypy.expose
   def list(self):
-    # print 'Food listMethod'
     dao            = FoodDAO()
     foodCollection = dao.listFoods()
+
+    return self.JSONSerializer.serialize(foodCollection)
+
+  @cherrypy.expose
+  def searchFoodByIngredients(self, ingredients):
+    dao            = FoodDAO()
+    foodCollection = dao.searchFoodByIngredients(ingredients)
 
     return self.JSONSerializer.serialize(foodCollection)
 
