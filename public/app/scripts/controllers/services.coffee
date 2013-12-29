@@ -16,7 +16,11 @@ angular.module('hungryyApp')
     $scope.resultFoods         = []
 
     $scope.searchFoodByIngredients = =>
-      FoodFactory.searchFoodByIngredients($scope.selectedIngredients)
+      selected = []
+      for item in $scope.selectedIngredients
+        selected.push parseInt(item)
+
+      FoodFactory.searchFoodByIngredients(selected)
         .success (data, status, headers, config) =>
           if data is 'null' or data is null
             $scope.resultFoods = []

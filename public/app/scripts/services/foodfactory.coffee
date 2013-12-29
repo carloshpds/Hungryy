@@ -5,9 +5,9 @@ angular.module('hungryyApp')
 
     baseURL = 'api/food/'
     
-    searchFoodByIngredients: (ingredients) =>
+    searchFoodByIngredients: (ingredientsIds) =>
       $http 
         url    : baseURL + 'searchFoodByIngredients'
         method :'GET'
         params :
-          ingredients: ingredients
+          ingredientsIds: ingredientsIds

@@ -22,9 +22,9 @@ class FoodController():
     return self.JSONSerializer.serialize(foodCollection)
 
   @cherrypy.expose
-  def searchFoodByIngredients(self, ingredients):
+  def searchFoodByIngredients(self, ingredientsIds):
     dao            = FoodDAO()
-    foodCollection = dao.searchFoodByIngredients(ingredients)
+    foodCollection = dao.searchFoodByIngredients(ingredientsIds)
 
     return self.JSONSerializer.serialize(foodCollection)
 

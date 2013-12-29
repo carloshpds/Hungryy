@@ -52,11 +52,24 @@
     </div>
   </section>
 
+  <hr/>
   
   <section>
-    <ul>
-      <li ng-repeat="food in resultFoods">
-        {{food.name}}
+    <ul class="list-unstyled">
+      <li class="result-food" ng-repeat="food in resultFoods">
+        <div class="jumbotron" ng-model="person">
+          <div class="row">
+            <div class="media col-md-12">
+              <a class="pull-left" href="../styles/img/food/default-img.png">
+                <img class="media-object img-circle" src="../styles/img/food/default-img.png" width="150" height="150">
+              </a>
+              <div class="media-body">
+                <h2 class="media-heading">{{food.name}}</h2>
+                <p>{{food.description}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </li>
     </ul>
   </section>

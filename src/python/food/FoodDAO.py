@@ -34,15 +34,15 @@ class FoodDAO(object):
       self.connection.close()
 
 
-  def searchFoodByIngredients(self, ingredients=[]):
+  def searchFoodByIngredients(self, ingredientsIds=[]):
     try:
-      ingredients = map(int, ingredients)
-      ingredients = tuple(ingredients)
+      ingredientsIds = map(int, ingredientsIds)
+      ingredientsIds = tuple(ingredientsIds)
 
       query = """ SELECT * FROM food f 
                     WHERE f.id NOT IN (
                       SELECT fi.food_id FROM food_ingredient fi 
-                      WHERE fi.ingredient_id NOT IN """ + str(ingredients) + """
+                      WHERE fi.ingredient_id NOT IN """ + str(ingredientsIds) + """
                     )"""
       print colored(query, 'green')
       self.connCursor.execute(query)
