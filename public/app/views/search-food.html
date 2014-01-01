@@ -1,6 +1,8 @@
 
 <article id="i-am-hungry-view" class="container">
   
+  <div id="main-background"></div>
+
   <!-- Alert Error -->
   <div class="alert alert-danger" ng-show="requestError">
     <h4>Oh No! Houston, we have a problem...</h4>
@@ -17,9 +19,9 @@
       <!-- Header - I'm so hungry -->
       <div class="row">
         <div class="col-md-12">
-          <h1>
+          <h2>
             My ingredients...
-          </h1>
+          </h2>
         </div>
       </div>
     
@@ -52,11 +54,13 @@
     </div>
   </section>
 
-  <hr/>
   
   <section>
-    <ul class="list-unstyled">
+  
+    <!-- <ul class="list-unstyled">
       <li class="result-food" ng-repeat="food in resultFoods">
+        
+
         <div class="jumbotron" ng-model="person">
           <div class="row">
             <div class="media col-md-12">
@@ -70,6 +74,28 @@
             </div>
           </div>
         </div>
+
+
+
+      </li>
+    </ul> -->
+
+
+    <ul class="list-unstyled list-inline">
+      <li class="result-food" ng-repeat="food in resultFoods">
+        
+
+        <div class="item-result-food-container">
+          <div class="item-rs-img-container">
+            <a href="../styles/img/food/default-img.png">
+              <img src="../styles/img/food/default-img.png" width="100%" height="120">
+            </a>
+          </div>
+          <div ng-class="item-rs-footer-container"></div>
+        </div>
+
+
+        
       </li>
     </ul>
   </section>

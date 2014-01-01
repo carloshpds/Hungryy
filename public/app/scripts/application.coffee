@@ -11,7 +11,7 @@ angular.module('hungryyApp', ['ui.router','localytics.directives'])
         templateUrl: 'views/search-food.html',
         controller : 'FoodController'
         resolve    : 
-          resolveIngredients: ($q,$timeout,IngredientFactory) =>
+          resolveIngredients: (IngredientFactory) =>
             return IngredientFactory.listIngredients()
       )
 

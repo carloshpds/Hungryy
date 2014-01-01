@@ -1,18 +1,50 @@
-/* line 13, ../../sass/i-am-hungry/i-am-hungry.sass */
+/* line 12, ../../sass/i-am-hungry/i-am-hungry.sass */
+#i-am-hungry-view #main-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/food/wood-background.jpg");
+  width: 100%;
+  min-height: 900px;
+  opacity: 0.8;
+  box-shadow: 0 3px 10px 0 black;
+}
+/* line 23, ../../sass/i-am-hungry/i-am-hungry.sass */
 #i-am-hungry-view .chosen-container-multi ul.chosen-choices {
   padding: 15px;
 }
-/* line 16, ../../sass/i-am-hungry/i-am-hungry.sass */
+/* line 26, ../../sass/i-am-hungry/i-am-hungry.sass */
 #i-am-hungry-view #hungryy-core-container {
   padding: 15px;
 }
-/* line 19, ../../sass/i-am-hungry/i-am-hungry.sass */
+/* line 29, ../../sass/i-am-hungry/i-am-hungry.sass */
 #i-am-hungry-view #search-food-button {
   height: 150px;
   font-size: 50px;
   font-family: Lobster, cursive;
+  box-shadow: 0 0 10px 0 black;
 }
-/* line 24, ../../sass/i-am-hungry/i-am-hungry.sass */
+/* line 35, ../../sass/i-am-hungry/i-am-hungry.sass */
 #i-am-hungry-view .result-food {
   margin: 15px;
+}
+/* line 40, ../../sass/i-am-hungry/i-am-hungry.sass */
+#i-am-hungry-view .item-result-food-container {
+  position: relative;
+  background-color: #eeeeee;
+  float: left;
+  width: 340px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 black;
+}
+/* line 51, ../../sass/i-am-hungry/i-am-hungry.sass */
+#i-am-hungry-view .item-result-food-container .item-rs-img-container {
+  width: 100%;
+  height: 120px;
+}
+/* line 57, ../../sass/i-am-hungry/i-am-hungry.sass */
+#i-am-hungry-view .item-result-food-container .item-rs-img-container img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
 }
