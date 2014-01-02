@@ -86,12 +86,29 @@
         
 
         <div class="item-result-food-container">
+          <h2 style="position:absolute; left:5px; ">{{food.name}}</h2>
           <div class="item-rs-img-container">
-            <a href="../styles/img/food/default-img.png">
-              <img src="../styles/img/food/default-img.png" width="100%" height="120">
+            <a href="../styles/img/food/default.jpg">
+              <img src="../styles/img/food/default.jpg" width="100%" height="120">
             </a>
           </div>
-          <div ng-class="item-rs-footer-container"></div>
+          <div ng-class="item-rs-footer-container" style="color:black">
+            <p style="margin: 10px;">{{food.description}}</p>
+            <ul class="list-inline action-icon-list" ng-show="showActionIcons">
+              <li class="action-icon">
+                <span class="glyphicon glyphicon-thumbs-up"></span>
+              </li>
+              <li class="action-icon">
+                <span class="glyphicon glyphicon-thumbs-down"></span>
+              </li>
+              <li class="action-icon">
+                <span class="glyphicon glyphicon-user"></span>
+              </li>
+              <li class="action-icon">
+                <span class="glyphicon glyphicon-th-list"></span>
+              </li>
+            </ul>
+          </div>
         </div>
 
 

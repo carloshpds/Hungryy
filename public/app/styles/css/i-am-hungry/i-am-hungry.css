@@ -3,7 +3,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../img/food/wood-background.jpg");
+  background: url("../img/food/wood-background.jpg") repeat;
   width: 100%;
   min-height: 900px;
   opacity: 0.8;
@@ -31,7 +31,7 @@
 /* line 40, ../../sass/i-am-hungry/i-am-hungry.sass */
 #i-am-hungry-view .item-result-food-container {
   position: relative;
-  background-color: #eeeeee;
+  background: url("../img/food/natural-paper.jpg");
   float: left;
   width: 340px;
   height: 200px;
@@ -47,4 +47,12 @@
 #i-am-hungry-view .item-result-food-container .item-rs-img-container img {
   width: 100%;
   border-radius: 10px 10px 0 0;
+}
+/* line 63, ../../sass/i-am-hungry/i-am-hungry.sass */
+#i-am-hungry-view .action-icon-list {
+  margin: 0 25%;
+}
+/* line 68, ../../sass/i-am-hungry/i-am-hungry.sass */
+#i-am-hungry-view .action-icon-list li.action-icon {
+  font-size: 30px;
 }

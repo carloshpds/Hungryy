@@ -30,5 +30,3 @@ angular.module('hungryyApp')
         .error (data, status, headers, config) =>
           alert 'ERROR: ' + data + ' Status Code: ' + status
 
-
-
