@@ -82,7 +82,11 @@
 
 
     <ul class="list-unstyled list-inline">
-      <li class="result-food" ng-repeat="food in resultFoods">
+      <li 
+        class         ="result-food" 
+        ng-repeat     ="food in resultFoods" 
+        ng-mouseenter ="mouseenterFoodItemHandler($event)"
+        ng-mouseleave ="mouseleaveFoodItemHandler($event)">
         
 
         <div class="item-result-food-container">

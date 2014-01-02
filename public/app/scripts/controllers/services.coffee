@@ -30,3 +30,24 @@ angular.module('hungryyApp')
         .error (data, status, headers, config) =>
           alert 'ERROR: ' + data + ' Status Code: ' + status
 
+    $scope.mouseenterFoodItemHandler = ($event) =>
+      $target   = $ $event.currentTarget
+      $foodItem = $target.find '.item-result-food-container'
+      
+      $foodItem.animate
+        height : ( $target.height() + 40 ) + 'px'
+        width  : ( $target.width()  + 40 ) + 'px'
+        , 'fast' 
+      return
+
+    $scope.mouseleaveFoodItemHandler = ($event) =>
+      $target   = $ $event.currentTarget
+      $foodItem = $target.find '.item-result-food-container'
+      
+      $foodItem.animate
+        height : ( $target.height() - 40 ) + 'px'
+        width  : ( $target.width()  - 40 ) + 'px'
+        , 'fast'
+      return
+
+ 
