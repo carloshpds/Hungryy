@@ -5,7 +5,7 @@
 import cherrypy
 
 from Root import Root
-from src.python.food.FoodController import FoodController
+from src.python.recipe.RecipeController import RecipeController
 from src.python.ingredient.IngredientController import IngredientController
 
 # ===============================================
@@ -14,7 +14,7 @@ from src.python.ingredient.IngredientController import IngredientController
 if __name__ == '__main__':
 
   rootPage      		= Root()
-  rootPage.food 		= FoodController()
+  rootPage.recipe 		= RecipeController()
   rootPage.ingredient	= IngredientController()
 
   cherrypy.quickstart(rootPage, '/api', config=rootPage.config)

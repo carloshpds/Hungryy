@@ -44,7 +44,7 @@
             <button 
               id="search-food-button" 
               class="btn btn-primary form-control"
-              ng-click="searchFoodByIngredients()">
+              ng-click="searchRecipeByIngredients()">
               Search for food !!
             </button>
           </div>
@@ -85,8 +85,8 @@
       <li 
         class         ="result-food" 
         ng-repeat     ="food in resultFoods" 
-        ng-mouseenter ="mouseenterFoodItemHandler($event)"
-        ng-mouseleave ="mouseleaveFoodItemHandler($event)">
+        ng-mouseenter ="mouseenterRecipeItemHandler($event)"
+        ng-mouseleave ="mouseleaveRecipeItemHandler($event)">
         
 
         <div class="item-result-food-container">

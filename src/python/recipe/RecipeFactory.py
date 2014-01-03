@@ -2,19 +2,19 @@
 # ===============================================
 # Imports
 # ===============================================
-from src.python.food.Food import Food
+from src.python.recipe.Recipe import Recipe
 from src.python.util.factories.EntityFactory import EntityFactory
 
 # ===============================================
-# FoodFactory class
+# RecipeFactory class
 # ===============================================
-class FoodFactory(EntityFactory):
+class RecipeFactory(EntityFactory):
 
   def buildObject(self, item):
-    foodObject = Food(
+    recipeObject = Recipe(
       id          = int(item[0]), 
       name        = item[1],      
       description = item[2]      
     )
-    return foodObject 
+    return recipeObject 
 

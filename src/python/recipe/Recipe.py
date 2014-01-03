@@ -1,10 +1,10 @@
 
 # ===============================================
-# Food class
+# Recipe class
 # ===============================================
-class Food(object):
+class Recipe(object):
 
-  """docstring for Food"""
+  """docstring for Recipe"""
   def __init__(self, id, name, description):
     self.id          = id
     self.name        = name
