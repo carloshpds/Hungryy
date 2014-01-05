@@ -9,6 +9,11 @@
 }
 
 /* line 10, ../sass/application.sass */
+body {
+  background: url("../img/squad-bg.png");
+}
+
+/* line 13, ../sass/application.sass */
 body > main > .container {
   padding-top: 55px;
 }

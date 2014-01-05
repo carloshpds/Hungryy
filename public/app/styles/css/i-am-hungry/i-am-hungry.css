@@ -1,13 +1,13 @@
 /* line 12, ../../sass/i-am-hungry/i-am-hungry.sass */
-#i-am-hungry-view #main-background {
+#i-am-hungry-view .banner-img {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../img/food/wood-background.jpg") repeat;
+  background: url("../img/food/banner.jpg") no-repeat top right;
   width: 100%;
-  min-height: 900px;
-  opacity: 0.8;
-  box-shadow: 0 3px 10px 0 black;
+  height: 400px;
+  z-index: -1000;
+  box-shadow: 0 0 265px 12px #e6e1e1;
 }
 /* line 23, ../../sass/i-am-hungry/i-am-hungry.sass */
 #i-am-hungry-view .chosen-container-multi ul.chosen-choices {
@@ -18,17 +18,10 @@
   padding: 15px;
 }
 /* line 29, ../../sass/i-am-hungry/i-am-hungry.sass */
-#i-am-hungry-view #search-food-button {
-  height: 150px;
-  font-size: 50px;
-  font-family: Lobster, cursive;
-  box-shadow: 0 0 10px 0 black;
-}
-/* line 35, ../../sass/i-am-hungry/i-am-hungry.sass */
 #i-am-hungry-view .result-food {
   margin: 15px;
 }
-/* line 40, ../../sass/i-am-hungry/i-am-hungry.sass */
+/* line 34, ../../sass/i-am-hungry/i-am-hungry.sass */
 #i-am-hungry-view .item-result-food-container {
   position: relative;
   background: url("../img/food/natural-paper.jpg");
@@ -37,22 +30,23 @@
   height: 200px;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 black;
+  cursor: pointer;
 }
-/* line 51, ../../sass/i-am-hungry/i-am-hungry.sass */
+/* line 46, ../../sass/i-am-hungry/i-am-hungry.sass */
 #i-am-hungry-view .item-result-food-container .item-rs-img-container {
   width: 100%;
   height: 120px;
 }
-/* line 57, ../../sass/i-am-hungry/i-am-hungry.sass */
+/* line 52, ../../sass/i-am-hungry/i-am-hungry.sass */
 #i-am-hungry-view .item-result-food-container .item-rs-img-container img {
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
-/* line 63, ../../sass/i-am-hungry/i-am-hungry.sass */
+/* line 58, ../../sass/i-am-hungry/i-am-hungry.sass */
 #i-am-hungry-view .action-icon-list {
   margin: 0 25%;
 }
-/* line 68, ../../sass/i-am-hungry/i-am-hungry.sass */
+/* line 63, ../../sass/i-am-hungry/i-am-hungry.sass */
 #i-am-hungry-view .action-icon-list li.action-icon {
   font-size: 30px;
 }

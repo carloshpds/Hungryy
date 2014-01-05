@@ -28,3 +28,6 @@ class IngredientDAO(object):
 
     except Exception as error:
       print '[IngredientDAO] listIngredients: ' + str(error)
+
+    finally:
+      self.connection.close()

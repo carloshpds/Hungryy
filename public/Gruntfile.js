@@ -238,14 +238,19 @@ module.exports = function (grunt) {
       //     ]
       //   }
       // }
+      vendors: {
+        files:{
+          '<%= yeoman.app %>/styles/hungryy-style-app/vendors.min.css' : [
+            '<%= yeoman.app %>/styles/vendors/{,*/}*.css'
+          ]
+        }
+      },
+
       dev: {
         files: {
           '<%= yeoman.app %>/styles/hungryy-style-app/hungryy-style-app.min.css': [
             '<%= yeoman.app %>/styles/css/{,*/}*.css'
           ],
-          '<%= yeoman.app %>/styles/hungryy-style-app/vendors.min.css' : [
-            '<%= yeoman.app %>/styles/vendors/{,*/}*.css'
-          ]
         }
       },
       dist : {
@@ -257,8 +262,8 @@ module.exports = function (grunt) {
           '<%= yeoman.dist %>/styles/hungryy-style-app/vendors.min.css' : [
             '<%= yeoman.app %>/styles/vendors/{,*/}*.css'
           ],
-
         }
+
       }
     },
 
